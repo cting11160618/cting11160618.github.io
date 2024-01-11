@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11160618張婷期末作業</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <!--自己的 CSS 要放在 bxSlider CSS 的後面-->
+    <link rel="stylesheet" href="style.css">
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap');
+   
+    html{scroll-behavior: smooth;}
+    *{ box-sizing: border-box;}
+    body{
+        color:hsl(0, 0%, 35%);
+        font-family: 'Noto Sans TC', sans-serif;
+        background-color:rgb(255, 255, 255);
+    }
+    .bx-wrapper {
+    margin: 0 auto;
+    box-shadow: 0 0 0 0;
+    border: 0;
+}
+.bx-wrapper .bx-pager {
+    bottom: 20px;
+}
+.bx-wrapper .bx-pager.bx-default-pager a.active {
+    background-color: white;
+}
+.wrap-all{
+    width:860px;
+    margin: 0 auto;
+
+}
+.card2-image{background-image: url(image/recycle.png);
+}
+.card2-image{
+    color: aliceblue;
+    padding-top:1300px;
+    padding-left:20px;
+    background-image: url(image/recycle.png);
+    background-size: cover;
+}
+/*菁英招募內容*/
+.card4{
+    margin:0 auto;
+        padding: 80px 120px;
+        border-radius: 10px;/*倒圓角*/
+        background-image: url(image/HR.jpg);
+        background-size: cover;
+
+}
+
+.card4-title{
+    color: #ffffff;
+    font-size: 80px;
+    line-height: 110%;
+    font-weight: 700;
+    padding-top:350px;
+    padding-left:430px;
+    text-shadow: 1px 3px 5px  rgb(10, 0, 10, 3);
+
+}
+
+.card4-bar{
+    color: #929586;
+    font-size: 18px;
+    line-height: 140%;
+    padding:20px 20px;
+
+}
+
+/*部門內容1*/
+
+.bumen1{
+    background-color: #505050;
+    width: 210px;
+    height: 340px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 4);
+}
+.bumen1-image{
+    color: aliceblue;
+    width: 200px;
+    height: 100px;
+    padding-top:05px;
+    padding-left:40px;
+    padding-bottom: 200px;
+    background-image: url(image/hunningtu.png);
+    background-size: cover;
+}
+
+.bumen1-title{
+    color: #dedede;
+    font-size: 48px;
+    line-height: 110%;
+    font-weight: 400;
+    padding-top:15px;
+    padding-left:25px;
+    background-size: cover;
+
+}
+.bumen1-intro{
+    color: #b1b1b1;
+    font-size: 20px;
+    line-height: 140%;
+    font-weight: 400;
+    padding:20px 20px;
+    padding-left:13px;
+
+}
+/*部門內容2*/
+.bumen2{
+    background-color: #505050;
+    width: 210px;
+    height: 340px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 4);
+}
+.bumen2-image{
+    color: aliceblue;
+    
+    padding-top:200px;
+    padding-left:10px;
+    background-image: url(image/shigaoban.png);
+    background-size: cover;
+
+
+}
+.bumen2-title{
+    color: #dedede;
+    font-size: 48px;
+    line-height: 110%;
+    font-weight: 400;
+    padding-top:15px;
+    padding-left:30px;
+    background-size: cover;
+
+}
+.bumen2-intro{
+    color: #b1b1b1;
+    font-size: 20px;
+    line-height: 140%;
+    padding:20px 20px;
+    padding-left:35px;
+
+}
+/*部門內容3*/
+.bumen3{
+    background-color: #505050;
+    width: 210px;
+    height: 340px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 4);
+}
+.bumen3-image{
+    color: aliceblue;
+    padding-top:200px;
+    padding-left:60px;
+    background-image: url(image/dianzi.png);
+    background-size: cover;
+
+
+}
+.bumen3-title{
+    color: #dedede;
+    font-size: 48px;
+    line-height: 110%;
+    font-weight: 400;
+    padding-top:15px;
+    padding-left:50px;
+    background-size: cover;
+    
+
+}
+.bumen3-intro{
+    color: #b1b1b1;
+    font-size: 20px;
+    line-height: 140%;
+    font-weight: 400;
+    padding:20px 20px;
+    padding-left:25px;
+
+}
+
+/*部門內容4*/
+.bumen4{
+    background-color: #505050;
+    width: 210px;
+    height: 340px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 4);
+}
+.bumen4-image{
+    color: aliceblue;
+    padding-top:200px;
+    padding-left:20px;
+    background-image: url(image/shuini.png);
+    background-size: cover;
+
+
+}
+.bumen4-title{
+    color: #dedede;
+    font-size: 48px;
+    line-height: 110%;
+    font-weight: 400;
+    padding-top:15px;
+    padding-left:50px;
+    background-size: cover;
+
+}
+.bumen4-intro{
+    color: #b1b1b1;
+    font-size: 20px;
+    line-height: 140%;
+    padding:20px 20px;
+    padding-left:25px;
+
+}
+
+    h1.logo {
+        width: 300px;
+        height: 70px;
+        background-image: url(image/logo.png);
+        background-size: cover;
+        text-indent: -999px;
+        overflow: hidden;
+        margin-inline: auto;
+        padding-top: 0px;
+        
+    }
+    body, h1, h1.logo ,h2, h3, p ,ul {
+        margin: 0;/*清除預設的 margin*/
+    }
+    .wrap {
+        width: 1280px;
+        margin-inline: auto;/*區塊左右置中*/
+    }
+    section {
+        background-color: #ffffff;
+        height: 600px;
+        margin-top: 20px;/*間格距離*/
+        padding: 10px 20px;/*調整內邊距*/
+        border-radius: 20px;
+    }
+    div.card2 {
+        background-color: #ffffff;
+        height: 1500px;
+        margin-top: 20px;/*間格距離*/
+        padding: 10px 20px;/*調整內邊距*/
+        border-radius: 20px;
+    }
+    div.card4 {
+        background-color: #dad39c;
+        height: 1000px;
+        margin-top: 20px;/*間格距離*/
+        padding: 10px 20px;/*調整內邊距*/
+        border-radius: 20px;
+    }
+    h2 {
+        color: #313131;
+        font-size: 45px;
+        font-weight: 700;
+        padding-left: 520px;
+    }
+    header {
+        display: flex;/*橫排*/
+        align-items: center;/*讓Logo 跟 Menu 上下居中*/
+        padding:30px 80px;
+        background-color: antiquewhite;
+        border-radius: 0px;/*倒圓角*/
+        margin-top: 0px;
+        position: sticky;
+        top: 0px;
+        box-shadow: 0 0 0px 0 rgba(0, 0, 0, 0);
+    }
+    header h1.logo {
+        margin-right: auto;/*撐開中間的距離*/
+    }
+    header a {
+        color: #11110b;
+        text-decoration: none;/*清除超連結的底線*/
+        display: block;/*把超連結轉換成區塊(才可以設定寬高)*/
+    }
+    .menu ul {
+        display: flex;/*讓選單也橫排*/
+        gap: 16px;/*關於間格距離的部分*/
+        list-style:none;/*隱藏列表圓點*/
+    }
+    .menu a {
+        font-size: 20px;
+        padding: 6px 16px;/*把可以點選的範圍撐大*/
+        background-color:#ffffff;
+        border-radius: 20px;
+    }
+    .menu a:hover {/*滑鼠移上去之後的狀態*/
+        color: aliceblue;
+        background-color: rgb(0, 94, 173);
+    }
+    a.anchor {/*自訂定位點*/
+        position: relative;
+        top: -114px;/*把定位點往上調*/
+        visibility: hidden;/*可見度為零*/
+    }
+    main {
+
+        display: flex;/*讓選單也橫排*/
+        gap:70px;
+        margin:0 auto;
+        padding: 80px 120px;
+        border-radius: 10px;/*倒圓角*/
+        background-image: url(image/bumens.jpg);
+        background-size: cover;
+    }
+
+ 
+
+    .bumen1:hover{
+        background-color: rgb(0, 94, 173) 
+    }
+    .bumen2:hover{
+        background-color: rgb(0, 167, 60) 
+    }    
+    .bumen3:hover{
+        background-color: rgb(70, 178, 231) 
+    }    
+    .bumen4:hover{
+        background-color: rgb(0, 94, 173) 
+    }
+    .card4-title:hover{
+       color: rgb(70, 178, 231);
+
+    }
+
+    footer{
+        display: flex;/*橫排*/
+        align-items: center;/*讓Logo 跟 Menu 上下居中*/
+        padding:100px 80px;
+        background-color: rgb(0, 94, 173);
+        margin-top: 50px;
+        top: 300px;
+    }
+
+    h4.logo{
+        margin-right: auto;/*撐開中間的距離*/
+        width: 30px;
+        height: 100px;
+        background-image: url(image/logo2.png);
+        background-size: cover;
+        overflow: hidden;
+        margin-inline: auto;
+        padding-top: 0px;
+
+    }
+
+    h3{
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 140%;
+            padding:20px 20px;
+            padding-left:155px;
+
+        }
+
+    
+</style>
+</head>
+<body>
+<div class="wrap">  
+<div class="wrap">
+    <header>
+        <h1 class="logo">
+           <a href="#">My Logo</a>
+        </h1>
+        <nav class="menu">
+        <ul>
+            <li><a href="#about">關於環球</a></li>
+            <li><a href="#news">永續發展</a></li>
+            <li><a href="#product">公司部門</a></li>
+            <li><a href="#service">菁英招募</a></li>
+        </ul>
+        </nav>
+    </header>
+    <a class="anchor" id="about"></a>
+    <section>
+        
+          <!-- HTML 的部分-->
+    <section class="slider">
+        <div><img src="image/photo1.png" alt=""></div>
+        <div><img src="image/photo2.png" alt=""></div>
+        <div><img src="image/photo3.png" alt=""></div>
+        <div><img src="image/photo4.png" alt=""></div>
+        <div><img src="image/photo5.png" alt=""></div>
+    </section>
+
+        <!-- JavaScript 的部分-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+        <!--功能設定的部分-->
+        <script>
+            $(document).ready(function(){
+              $(".slider").bxSlider({
+                auto: true, //自動播放
+                //mode: 'fade',//滾動模式
+                pager: true,//照片下方的小圓點
+                speed: 1000,//滾動速度
+                slideWidth: 1280 //幻燈片寬度
+              });
+            });
+        </script>
+    </section>
+    <a class="anchor" id="news"></a>
+    <div class="card2">
+        
+        <div class="card2-image"> </div>
+    </div>
+    <a class="anchor" id="product"></a>
+    <section>
+        <h2>公 司 部 門</h2>
+            <main>
+            <!--部門1-->
+                <div class="bumen1">
+
+                    <div class="bumen1-image"> </div>
+                    <div class="bumen1-title">混凝土</div>
+                    <div class="bumen1-intro">Concrete Division</div>
+                </div>
+
+            <!--部門2-->
+                <div class="bumen2">
+
+                        <div class="bumen2-image"> </div>
+                        <div class="bumen2-title">石膏板</div>
+                        <div class="bumen2-intro">Gypsum Board</div>
+                </div>
+
+
+            <!--部門3-->
+                <div class="bumen3">
+
+                    <div class="bumen3-image"> </div>
+                    <div class="bumen3-title">電 子</div>
+                    <div class="bumen3-intro">Microelectronics</div>
+                </div>
+                
+            <!--部門4-->
+                <div class="bumen4">
+
+                    <div class="bumen4-image"> </div>
+                    <div class="bumen4-title">水 泥</div>
+                    <div class="bumen4-intro">Cement Division</div>
+                </div>
+            </main>
+
+    </section>
+    <a class="anchor" id="service"></a>
+    <div class="card4">
+        
+            <div class="card4-title">菁  英  招  募</div>
+    
+    </div>
+    <footer>
+        <div class="h4.logo"></div>
+        <h3>環球水泥股份有限公司 Universal  Cement  Corporation      TEL : 02-2507-7801  FAX : 02-2506-7580</h3>
+    </footer>
+</div>
+</div> 
+</body>
+</html>
